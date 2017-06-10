@@ -5,6 +5,7 @@
 	max-width: 1200px;
 	margin: 0 auto;
 	border: 1px solid black;
+	text-align: center;
 }
 .clearFloat {
 	clear: both;
@@ -12,8 +13,13 @@
 .relativeBlock {
 	position: relative;
 }
-#mainHeader {
+.greyBG {
 	background-image: url( 'img/background image.png' );
+}
+.lightGrey {
+	background-color: rgb(247, 247, 247);
+}
+#mainHeader {	
 	border :1px solid red;
 }
 .header-nav {
@@ -58,7 +64,6 @@
 	left: 400px;
 	width: 600px;
 	border: 1px solid red;
-	padding: 40px;
 }
 .about-us-right div:first-child {
 	font-size: 50px;
@@ -71,15 +76,18 @@
 	font-family: "Myriad Pro";
 	color: rgb(97, 97, 97);
 }
+.about-us-right img {
+	width: 100%;
+}
 .services {
   background-color: rgb(247, 247, 247);
   text-align: center;
 }
-.services div:first-child {
+.services-title {
 	font-size: 50px;
 	font-family: "LibreBaskerville";	
 }
-.services div:nth-child( 2 ) {
+.services-title2 {
       font-size: 18px;
       font-family: "Poppins";
       color: rgb(97, 97, 97);
@@ -99,4 +107,185 @@
 	font-family: "Poppins";
 	color: rgb(97, 97, 97);
 	line-height: 1.667;
+}
+.portfolio {
+	text-align: center;	
+}
+.portfolio-title {
+	font-size: 50px;
+	font-family: "LibreBaskerville";	
+}
+.portfolio-title2 {
+	font-size: 18px;
+	font-family: "Poppins";
+	color: rgb(97, 97, 97);
+}
+.team {
+	background-color: rgb(247, 247, 247);
+	text-align: center;
+}
+.team-block {
+	display: inline-block;
+}
+.team-title {
+      font-size: 50px;
+      font-family: "LibreBaskerville";
+}
+.team-title2 {
+	font-size: 18px;
+	font-family: "Poppins";
+	color: rgb(97, 97, 97);
+}
+.team-block-title {
+	font-size: 20px;
+	font-family: "Poppins";
+	color: rgb(39, 39, 39);
+}
+.team-block-text {
+	font-size: 15px;
+	font-family: "Poppins";
+}
+.team-links {
+	font-size: 15px;
+	font-family: "Poppins";
+	color: rgb(97, 97, 97);
+	line-height: 1.2;
+}
+.stats {
+	text-align: center;
+}
+.stats-block {
+	display: inline-block;
+	text-align: center;
+}
+.stats-title {
+      font-size: 20px;
+      font-family: "Poppins";
+      color: rgb(254, 254, 254);
+}
+.stats-text {
+	font-size: 15px;
+	font-family: "Poppins";
+	color: rgba(254, 254, 254, 0.702);
+}
+.work-title {
+	font-size: 50px;
+	font-family: "LibreBaskerville";
+	text-align: center;
+}
+.work-title2 {
+	font-size: 18px;
+	font-family: "Poppins";
+	color: rgb(97, 97, 97);
+	text-align: center;
+}
+.work-step {
+	text-align: center;
+	font-size: 0px;
+}
+.work-step-info {
+	width: 400px;	
+	border: 1px solid grey;
+	position: absolute;
+	left: 10px;
+	top: -10px;	
+}
+.work-step:nth-of-type(2n) .work-step-info {
+	left: 700px;
+}	
+.inner-text {
+	font-size: initial;
+	margin-left: 100px;
+	border: 1px solid black;
+	text-align: left;
+}	
+.work-step-info img:first-child {
+	margin: 10px 0 0 10px;
+	float: left;
+}	
+.work-step div img:last-child {
+	width: 100%;	
+}
+.price-block-title {
+	font-size: 50px;
+	font-family: "LibreBaskerville";
+}
+.price-block-title2 {
+	font-size: 18px;
+	font-family: "Poppins";
+	color: rgb(97, 97, 97);
+	text-align: center;
+}
+.price-block {
+	width: 250px;
+	display: inline-block;
+	border: 1px solid rgb( 200, 200, 200 );
+}
+.price-block img:first-child {
+	width: 100%;
+}	
+.price-block-month {
+	padding: 50px;
+	color: white;	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.price-block:nth-of-type(3n) .price-block-month {
+	background-image: url( 'img/bgGreen.png' );
+}	
+.price-block:nth-of-type(4n) .price-block-month {
+	background-image: url( 'img/bgRed.png' );
+}	
+.price-block:nth-of-type(5n) .price-block-month {
+	background-image: url( 'img/bgP.png' );
+}	
+.price-block-text {
+	font-size: 15px;
+	font-family: "Poppins";
+	color: rgb(39, 39, 39);	
+}
+.price-block button {
+	font-size: 16px;
+	font-family: "Poppins";
+	color: rgb(56, 198, 149);
+	margin: 0 auto;
+}
+.testi-block-title {
+	font-size: 50px;
+	font-family: "LibreBaskerville";
+}
+.testi-block-title2 {
+	font-size: 18px;
+	font-family: "Poppins";
+	color: rgb(97, 97, 97);	
+}
+.testimonials-text {	
+	margin-top: 30px;
+	background-image: url( 'img/”.png' );
+	display: inline-block;	
+	vertical-align: top;
+	width: 800px;
+	border: 1px solid grey;
+	text-align: left;
+	font-size: 15px;	
+	font-family: "Poppins";
+	color: rgb(97, 97, 97);
+	line-height: 1.8;
+}
+.testimonials-client {
+	font-size: 40px;
+	font-family: "Sacramento";
+	color: rgb(39, 39, 39);
+}
+.testimonials-name {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(39, 39, 39);
+    line-height: 4.444;
+}
+.testimonials-founder {
+	font-size: 13px;
+	font-family: "Poppins";
+	color: rgb(252, 95, 69);
+	line-height: 6.154;
 }
