@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+}
+.sectionArea {
+	max-width: 1200px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+.clearFloat {
+	clear: both;
+}
+.relativeBlock {
+	position: relative;
+}
+#mainHeader {
+	background-image: url( 'img/background image.png' );
+	border :1px solid red;
+}
+.header-nav {
+	font-size: 14px;
+ 	font-family: "Poppins";
+}
+.header-nav ul {
+	list-style: none;
+}
+.header-nav ul li {
+	float: left;
+	pad
+}
+#mainHeader+span {
+ 	font-size: 60px;
+  	font-family: "LibreBaskerville";
+  	margin: 0 auto;
+  	color: white;
+}	
+#mainHeader button {
+	font-size: 16px;
+  	font-family: "Poppins";
+  	color: white;
+  	background-color: rgb(252, 95, 69);
+  	margin: 0 auto;
+}
+.header-img-1:before {
+ 	content: url('img/header1.png');
+}
+.header-img-2:before {
+ 	content: url('img/header2.png');
+}
+.header-img-3:before {
+ 	content: url('img/header3.png');
+}
+#section2LeftImage {
+	margin: 30px 0 30px 0;
+}
+.about-us-right {
+	position: absolute;
+	top: 100px;
+	left: 400px;
+	width: 600px;
+	border: 1px solid red;
+	padding: 40px;
+}
+.about-us-right div:first-child {
+	font-size: 50px;
+	font-family: "LibreBaskerville";
+	color: rgb(49, 49, 49);
+	font-weight: bold;
+}
+.about-us-right div:nth-child( 2 ) {
+	font-size: 15px;
+	font-family: "Myriad Pro";
+	color: rgb(97, 97, 97);
+}
+.services {
+  background-color: rgb(247, 247, 247);
+  text-align: center;
+}
+.services div:first-child {
+	font-size: 50px;
+	font-family: "LibreBaskerville";	
+}
+.services div:nth-child( 2 ) {
+      font-size: 18px;
+      font-family: "Poppins";
+      color: rgb(97, 97, 97);
+}
+.serviceBlock {
+  text-align: center;
+  display: inline-block;
+  width: 250px;
+}	
+.serviceBlock div:first-child {
+	font-size: 20px;
+	font-family: "Poppins";
+	color: rgb(49, 49, 49);
+}
+.serviceBlock div:nth-child( 2 ) {
+	font-size: 15px;
+	font-family: "Poppins";
+	color: rgb(97, 97, 97);
+	line-height: 1.667;
+}

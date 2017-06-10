@@ -1,0 +1,243 @@
+1.Header:
+
+	header-nav:
+  		 font-size: 14px;
+ 		 font-family: "Poppins";
+
+	header: We design things with love and passion.
+ 		font-size: 60px;
+  		font-family: "LibreBaskerville";
+
+  	Button:
+  		font-size: 16px;
+  		font-family: "Poppins";
+  		background-color: rgb(252, 95, 69);
+
+	header-img-1:
+  		background-color: rgb(56, 198, 149);
+
+	header-img-2:
+  		background-color: rgb(178, 124, 245);
+
+	header-img-3:
+  		background-color: rgb(254, 185, 96);
+
+
+2.About-us-right:
+
+  About-Us-title :
+      font-size: 50px;
+      font-family: "LibreBaskerville";
+      color: rgb(49, 49, 49);
+      font-weight: bold;
+
+  About-Us-text :
+      (Analytics release series A financing launch party interaction design android angel investor. Vesting period social media sales conversion launch party rockstar incubator customer social proof graphical user interface technology supply chain. Non-disclosure agreement rockstar creative partner network launch party social proof paradigm shift long tail influencer. 
+
+      Monetization validation success. Seed round channels product 
+      management. Customer non-disclosure agreement strategy 
+      android growth hacking ramen buyer.)
+
+      font-size: 15px;
+      font-family: "Myriad Pro";
+      color: rgb(97, 97, 97);
+
+
+3.Services:
+  background-color: rgb(247, 247, 247);
+
+   Services-title : (Our Focus.)
+      font-size: 50px;
+      font-family: "LibreBaskerville";
+
+   Services-title2 : (We understand your requirement and provide quality works.)
+      font-size: 18px;
+      font-family: "Poppins";
+      color: rgb(97, 97, 97);
+
+   Services-block-title: (Web Design ...)
+      font-size: 20px;
+      font-family: "Poppins";
+      color: rgb(49, 49, 49);
+
+   Services-block-text: 
+      font-size: 15px;
+      font-family: "Poppins";
+      color: rgb(97, 97, 97);
+      line-height: 1.667;
+ 
+
+
+4.Portfolio:
+
+  Portfolio-title : (Portfolio.)
+      font-size: 50px;
+      font-family: "LibreBaskerville";
+
+  Portfolio-title2 : (We understand your requirement and provide quality works.)
+      font-size: 18px;
+      font-family: "Poppins";
+      color: rgb(97, 97, 97);
+
+
+5.Team:
+
+   Team-title : (Our Team.)
+      font-size: 50px;
+      font-family: "LibreBaskerville";
+
+   Portfolio-title2 : (We understand your requirement and provide quality works.)
+      font-size: 18px;
+      font-family: "Poppins";
+      color: rgb(97, 97, 97);
+
+   Team-block-title : (About Bennet.)
+      font-size: 20px;
+      font-family: "Poppins";
+      color: rgb(39, 39, 39);
+
+   Team-block-text: 
+      (Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar 
+      bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding 
+      facebook seed round A/B testing mass market. )
+
+      font-size: 15px;
+      font-family: "Poppins";
+
+  Team-links:
+      font-size: 15px;
+      font-family: "Poppins";
+      color: rgb(97, 97, 97);
+      line-height: 1.2;
+
+
+6.Stats:
+
+  stats-title: (12.458 ...)
+      font-size: 20px;
+      font-family: "Poppins";
+      color: rgb(254, 254, 254);
+
+  stats-text: 
+      font-size: 15px;
+      font-family: "Poppins";
+      color: rgba(254, 254, 254, 0.702);
+
+
+
+7.Work step:
+
+  Work-title : (Work steps.)
+      font-size: 50px;
+      font-family: "LibreBaskerville";
+
+  Work-title2 : (We understand your requirement and provide quality works.)
+      font-size: 18px;
+      font-family: "Poppins";
+      color: rgb(97, 97, 97);
+
+  
+  Work-text: 
+      (Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.)
+
+
+
+8.Pricing Table:
+
+  price-block-title:
+      font-size: 20px;
+      font-family: "Poppins";
+      color: rgb(49, 49, 49);
+
+  price-block-text :
+      (200GB Online Storage
+      20 Files Per Day
+      2TB Monthly Bandwidth
+      Secure Platform
+      24/7 Customer Support? Fast & Reliable )
+
+      font-size: 15px;
+      font-family: "Poppins";
+      color: rgb(39, 39, 39);
+
+  Price-button:
+      font-size: 16px;
+      font-family: "Poppins";
+      color: rgb(56, 198, 149);
+
+
+
+9.Testimonials:
+
+  Testimonials-text:
+      (Deployment ownership non-disclosure agreement vesting period crowdfunding 
+      success influencer partnership equity series A financing network effects user 
+      experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.)
+
+      font-size: 15px;
+      font-family: "Poppins";
+      color: rgb(97, 97, 97);
+      line-height: 1.8;
+
+  Testimonials-client:
+    (Melina):
+        font-size: 40px;
+        font-family: "Sacramento";
+        color: rgb(39, 39, 39);
+
+    (Melina_Albrecht):
+        font-size: 18px;
+        font-family: "Poppins";
+        color: rgb(39, 39, 39);
+        line-height: 4.444;
+  
+    (Founder_TingTong ):
+        font-size: 13px;
+        font-family: "Poppins";
+        color: rgb(252, 95, 69);
+        line-height: 6.154;
+
+
+
+10.Why select us:
+
+  selectUs-block-title:
+      font-size: 18px;
+      font-family: "Poppins";
+      color: rgb(39, 39, 39);
+
+  selectUs-block-text:
+      (uccess scrum project funding marketing seed money prototype innovator direct hackathon android angel investor. 
+
+      Technology founders churn rate niche market long tail release iteration burn rate backing. Churn rate accelerator.
+
+      Deployment ownership non-disclosure agreement vesting period crowdfunding success influencer partnership.)
+
+      font-size: 15px;
+      font-family: "Poppins";
+
+  selectUs-footer: (Start_your_journy_with_us_now)
+      font-size: 25px;
+      font-family: "Poppins";
+  
+
+11.Our blog:
+
+  Our-blog-author: (Damian_Schreiber)
+      font-size: 15px;
+      font-family: "Poppins";
+
+
+  Our-blog-date: (December_10__2015)
+      font-size: 13px;
+      font-family: "Poppins";
+
+  Our-blog-article: (Google_Street_View_adds_virtual_reality_support)
+      font-size: 18px;
+      font-family: "Poppins";
+      color: rgb(39, 39, 39);
+
+  Our-blog-article-text: (Traction_seed_money_infographic_accelerator_piv )
+      font-size: 15px;
+      font-family: "Poppins";
+
