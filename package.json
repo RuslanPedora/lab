@@ -1,0 +1,14 @@
+{
+  "name": "lab_service",
+  "version": "1.0.0",
+  "description": "Simple web service for Demandware Lab",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Vitalii Nobis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
