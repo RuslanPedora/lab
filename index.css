@@ -11,7 +11,7 @@
 }
 @font-face {
     font-family: LibreBaskerville;
-    src: url( 'fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf' );	
+    src: url( 'fonts/libre-baskerville/LibreBaskerville-Regular.otf' );	
 }
 @font-face {
     font-family: MyriadPro;
@@ -110,17 +110,18 @@
 	padding: 24px 10px 28px 10px;
 	color: rgb( 40, 40, 40 );
 	cursor: pointer;
-	transition: background-color .5s;
+	transition: background-color .5s, color .4s;
 	display: inline-block;
 }
 #mainHeader nav ul li a:hover {
 	background-color: rgb( 200, 200, 200 );
+	color: white;
 }	
 .header-text {
  	font-size: 60px;
  	font-family: "LibreBaskerville";
  	color: rgb( 255, 255, 250 );
- 	margin-top: 162px;
+ 	margin-top: 13.55%;
  	line-height: 142%;
 }	
 #mainHeader button {
@@ -128,16 +129,17 @@
 	font-family: "Poppins";
 	color: white;
 	background-color: rgb(252, 95, 69);
-	margin-top: 43px;
+	margin: 43px auto 0;
 	border: none;
 	padding: 12px 44px 11px 43px;
 	border-radius: 25px;
-	transition: color .5s, background-color .5s;
+	transition: color .5s, background-color .5s, box-shadow .5s;
 	cursor: pointer;
 	font-weight: bold;
+	outline:  none;
 }
 #mainHeader button:hover {
-	box-shadow: 0 3px 3px 3px white;
+	box-shadow: 0 1px 4px 4px white;
 }	
 #headerFlex {
 	display: flex;
@@ -148,7 +150,7 @@
 #headerFlex div {
 	font-size: 18px;
 	font-family: "Poppins";
-	margin: 83px 0 168px 0;
+	margin: 10% 0 20.6% 0;
 	width: calc(100%/3);
 }
 #headerFlex img {
@@ -173,9 +175,16 @@
 	background-image: url( 'img/01.png' );
 	background-repeat: no-repeat;
 	background-position: 5px 5px;
+
+	border-image: url( 'img/lines.png' ) 10 stretch;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px solid;
+
 }
 .about-us-right div:first-child {
-	padding-left: 84px;
+	padding-left: 13%;
 	font-size: 50px;
 	font-family: "LibreBaskerville";
 	color: rgb(49, 49, 49);
@@ -187,13 +196,6 @@
 	font-family: "MyriadPro";
 	color: rgb(97, 97, 97);
 	line-height: 174%;
-}
-.about-us-right div:last-child {
-	font-size: 0;
-}
-.about-us-right img {
-	width: 654px;
-	height: 3px;
 }
 
 
@@ -271,23 +273,50 @@
 	padding-bottom: 22px;
 	font-weight: bold;
 }
-.videoBox {
-	background-image: url( 'img/video.jpg' );		
-	color: rgb( 248, 249, 253 );
+.videoBox {	
+	color: white;
 }
-.videoBox div:first-child {
+.videoBox>div:nth-child(2) {
 	font-size: 30px;
 	font-family: "Poppins";
 	padding-top: 7.2%;
 	padding-bottom: 1.4%;
+	z-index: 1;
 }	
 .videoBox div:last-child {
 	font-family: "Poppins";
 	font-size: 15px;
 	margin-top: 1.6%;
 	padding-bottom: 7.8%;
+	z-index: 1;
+	transition: text-decoration .5s;
 }
-
+#videoContainer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+#videoContainer video {
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	transform: scaleX(2.2);
+}
+#playButton {
+	border-radius: 50%;
+	transition: box-shadow .5s; 
+	cursor: pointer;
+}	
+#playButton:hover {
+	box-shadow: 0 0 3px 3px rgb( 54, 219, 161 );
+}
+#playCaption:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
 
 
 
@@ -360,18 +389,6 @@
 	background-position: center top;
 	background-repeat: no-repeat;	
 	overflow: auto;
-}
-.team-title {
-	padding: 141px 0 0 8px;
-	font-size: 50px;
-	font-family: "LibreBaskerville";
-	font-weight: bold;
-}
-.team-title2 {
-	padding: 19px 0 62px 16px;
-	font-size: 18px;
-	font-family: "Poppins";
-	color: rgb(97, 97, 97);
 }
 #teamGroup {
 	display: flex;
@@ -566,28 +583,12 @@
 	background-repeat: no-repeat;
 	background-position: center top;
 }
-.work-title {
-	font-size: 50px;
-	font-family: "LibreBaskerville";
-	text-align: center;
-	font-weight: bold;
-	padding-top: 141px;
-	padding-left: 12px;
-	color: rgb(51,51,51);
-}
-.work-title2 {
-	font-size: 18px;
-	font-family: "Poppins";
-	color: rgb(97, 97, 97);
-	text-align: center;
-	padding: 19px 0 125px 14px;
-}
 .work-step {
 	text-align: center;
 	font-size: 0px;
 }
 .work-step-info {
-	width: 458px;
+	width: 38%;
 	position: absolute;
 	left: 38px;
 	top: -51px;
@@ -595,15 +596,15 @@
 	box-shadow:  2px -2px 2px 2px rgb( 220, 220, 220 );
 }
 .work-step:nth-of-type(2n) .work-step-info {
-	left: 720px;
+	left: 59%;
 }	
 .inner-text {
 	font-size: 15px;
-	margin-left: 100px;
+	margin-left: 22.3%;
 	text-align: left;
 	font-family: 'Poppins';
 	padding: 70px 49px 45px 25px;
-	width: 284px;
+	width: 67%;
 	line-height: 180%;
 }	
 .inner-text div {
@@ -649,12 +650,17 @@
 	display: inline-block;
 	margin: 0% 1%;
 	background-color: white;
+	width: 30.2%;
 }
-
-.price-block div img:first-child {
-	width: 361px;
-	height: 3px;
-}	
+#pricing>div>div:nth-child(3) {
+	border-top: 3px solid rgb( 54, 219, 161 );
+}
+#pricing>div>div:nth-child(4) {
+	border-top: 3px solid rgb( 234, 93, 84 );
+}
+#pricing>div>div:nth-child(5) {
+	border-top: 3px solid rgb( 153, 108, 213 );
+}
 .price-block-header {
 	font-size: 20px;
 	font-family: 'Poppins';
@@ -932,6 +938,9 @@
 #blogFlex>div:nth-child( 2 ) {
 	border-bottom: 3px solid rgb( 234, 93, 84 );	
 }	
+#blogFlex>div:nth-child( 2 )>div:last-child span {
+	font-weight: bold;
+}	
 #blogFlex>div:nth-child( 3 ) {
 	border-bottom: 3px solid rgb( 54, 219, 161 );
 }	
@@ -941,11 +950,11 @@
 #blogFlex>div:nth-child( 5 ) {
 	border-bottom: 3px solid rgb( 247, 185, 108 );
 }	
-#blogFlex>div>div:last-child {
-	cursor: pointer;
+#blogFlex>div>div:last-child span {
+	cursor: pointer;	
 }	
 #blogFlex>div>div:last-child span:hover {
-	text-shadow: 2px white;
+	text-decoration: underline;
 }	
 #blogFooter {
 	padding-top: 5.5%;
@@ -969,7 +978,7 @@
 	color: rgb( 40, 40, 40 );
 	background-color: rgb( 247, 247, 247 );
 	border: none;
-	padding: 10px 65px 10px 28px;
+	padding: 10px 5% 10px 28px;
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
 	transition: color .5s, background-color .5s;
@@ -989,7 +998,8 @@
 	transition: color .5s, background-color .5s, opacity .5s;
 	cursor: pointer;
 	font-weight: bold;
-	opacity: .8;
+	opacity: .7;
+	outline: none;
 }
 
 #subscribe form input[type=submit]:hover {
@@ -998,34 +1008,102 @@
 
 /*Blog section ---------------------------------------------------------------------------------------------------------*/	
 #contact {
-	background-color: cyan;
+	background-image: url( 'img/10.png' ), url( 'img/forest.png' );
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: rgb( 240, 240, 240 );
+
 }
-.contact form {
-	width: 700px;
+#contact form {
+	width: 70%;
 	margin: 0 auto;
+	text-align: left;
+	padding-top: .5%;
 }
-.contact form input:last-child {
+#contact form textarea, #contact form input {
+	background-color: white;
+	padding: 12px;
+	box-sizing: border-box;
+	font-size: 18px;
+	border-radius: 3px;
+	border: 1px solid rgb(240, 240, 230);
+	margin-bottom: 27px;
 	text-align: center;
 }
-.contact address {
-	background-color: rgb( 64, 64, 74 );
-	border: 1px solid red;
-	width: 1000px;
-	margin: 0 auto;
-	font-size: 0;
-}
-.adrress-box {
-	text-align: left;
-	display: inline-block;	
-	width: 24.5%;
-	border: 1px solid white;
-	vertical-align: top;
-	font-size: initial;
-}
-.adrress-box img {
-	clear: both;
+#contact form input {
+	width: 49.2%;
 }	
-.contact address img:last-image {
-	width: 1000px;
-	height: 3px;
+#contact .right-side-field {
+	float: right;
 }
+#contact form textarea {
+	width: 100%;
+	padding-bottom: 4%;
+}
+#contact form div {
+	text-align: center;
+}
+#contact address {
+	background-color: rgba( 64, 64, 74, 0.85 );
+	margin: 12.4% auto 0;
+	border-image: url( 'img/lines.png' ) 10 stretch;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px solid;
+	display: flex;
+	font-size: 15px;
+	font-family: "Poppins";
+	text-decoration: none;
+	width: 95%;
+	font-style: normal;
+}
+#contact address>div {
+	text-align: left;
+	width: calc( 100% / 4 );
+	vertical-align: top;
+	padding: 4.9% 3% 3.9%;
+	box-sizing: border-box;
+}
+#contact address>div>div {
+	margin-top: 15%;
+	color: rgb( 210, 208, 213 );
+}	
+#contact address span {
+	font-size: 18px;
+	padding-bottom: 13%;
+}
+#contact address>div:first-child img {
+	margin: 18% 11%;
+	width: 63%;
+}
+#contact address>div:last-child {
+	padding-left: 4.5%;
+}
+#contact address>div:last-child img {
+	padding: 5px 2.2%;
+	
+}
+#contact address>div:last-child img:hover {
+	cursor: pointer;
+}
+#contact .section-inner-div {
+	padding-bottom: 7%;
+}
+#contact button {
+	font-size: 16px;
+	font-family: "Poppins";
+	color: white;
+	background-color: rgb(252, 95, 69);
+	margin: 2% auto 0;
+	border: none;
+	padding: 12px 44px 11px 43px;
+	border-radius: 25px;
+	transition: color .5s, background-color .5s, box-shadow .5s;
+	cursor: pointer;
+	font-weight: bold;
+	outline: none;
+}
+#contact button:hover {
+	box-shadow: 0 0 4px 4px white;
+}	

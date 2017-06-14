@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel='stylesheet' href='index.css' >
+	<link rel='stylesheet' href='resize.css' >
 </head>
 <body>
 
@@ -68,9 +69,6 @@
 	      				 management. Customer non-disclosure agreement strategy<br>
 	      				 android growth hacking ramen buyer.
 	      			</div>   
-	      			<div>   			
-						<img src='img/lines.png' alt='lines'>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -102,13 +100,22 @@
 					</div>
 				</div>
 			</div>
-			<div class='videoBox'>
-				<div>
+			<div class='videoBox relativeBlock'>
+				<div id='videoContainer'>
+					<video id='videoElement'
+						   type="video/mp4"
+						   
+						   >
+						<source src='video/WebDesig_ Video.mp4'>
+						Your browser doesn't  support the video						
+					</video>
+				</div>
+				<div class='relativeBlock'>
 					Explore Our Awesomeness
 				</div>
-				<img src='img/video.png' alt='video'>
-				<div>
-					Click to play the video
+				<img id='playButton' class='relativeBlock' src='img/video.png' alt='video'>
+				<div class='relativeBlock'>
+					<span id='playCaption'>Click to play the video</span>
 				</div>
 			</div>
 		</div>
@@ -454,9 +461,6 @@
 					We understand your requirement and provide quality works.
 				</div>
 				<div class='price-block zero-font'>
-					<div class='zero-font'>
-						<img src='img/line copy.png' alt='line' >
-					</div>	
 					<div class='price-block-header'>
 						Starter
 					</div>
@@ -475,9 +479,6 @@
 					<button class='greenColor greenBColor'>GET STARTED</button>
 				</div>
 				<div class='price-block zero-font'>
-					<div class='zero-font'>
-						<img src='img/line.png' alt='line' >
-					</div>	
 					<div class='price-block-header'>
 						Ultimate
 					</div>
@@ -496,9 +497,6 @@
 					<button class='orangeColor orangeBColor'>GET STARTED</button>
 				</div>
 				<div class='price-block zero-font'>
-					<div class='zero-font'>
-						<img src='img/line copy 2.png' alt='line' >
-					</div>	
 					<div class='price-block-header'>
 						Professional
 					</div>
@@ -628,7 +626,7 @@
 		<div id='blog'>
 			<div class='section-inner-div'>
 				<div class='section-title'>
-					Why Select Us
+					Our Blog.
 				</div>
 				<div class='section-title2'>
 					We understand your requirement and provide quality works.
@@ -714,56 +712,83 @@
 		</div>
 	</section>
 
-
 	<section>
 		<div id='contact'>
 			<div class='section-inner-div'>
-				<div class='contact-title'>
+				<div class='section-title'>
 					Get in Touch
 				</div>
-				<div class='contact-title2'>
+				<div class='section-title2'>
 					We understand your requirements and provide quality works
 				</div>
 				<form>
-					<input type='text' required placeholder='Your Name'>
-					<input type='email' required placeholder='Your Email'>
+					<input class='left-side-field' type='text' required placeholder='Your Name'>
+					<input class='right-side-field' type='email' required placeholder='Your Email'>
 					<br>
-					<input type='text' required placeholder='Subject'>
-					<input type='text' required placeholder='Project Budget'>
+					<input class='left-side-field' type='text' required placeholder='Subject'>
+					<input class='right-side-field' type='text' required placeholder='Project Budget'>
 					<br>
-					<textarea type='text' required placeholder='Your Message'></textarea>
-					<br>
-					<input type='submit' value='SEND MESSAGE'>
+					<textarea rows=7 type='text' required placeholder='Your Message'></textarea>
+					<div>
+						<button type='submit'>SEND MESSAGE</button>
+					</div>	
 				</form>
 				<address>
-					<div class='adrress-box'>
+					<div>
 						<img src='img/logo.png' alt='logo image'>
 					</div>
-					<div class='adrress-box'>
-						<span>Alexis LLC.</span>
-						<br>
-						4125 Brighton Circle Road<br>					
-						Little Falls, MN 56345
-
+					<div>
+						<span class='greenColor'>Alexis LLC.</span>
+						<div>
+							4125 Brighton Circle Road<br>					
+							Little Falls, MN 56345
+						</div>
 					</div>
-					<div class='adrress-box'>
-						<span>Alexis LLC UK.</span>
-						<br>
-						81 Golden Knowes Road<br>
-						FRESHFIELD L37 6TP
+					<div>
+						<span class='purpurColor' >Alexis LLC UK.</span>
+						<div>
+							81 Golden Knowes Road<br>
+							FRESHFIELD L37 6TP
+						</div>
 					</div>
-					<div class='adrress-box'>					
-						<span>Follow us.</span>
-						<br>
-						<img src='img/links1.png' alt='link1' >
-						<img src='img/links2.png' alt='link2' >
-						<img src='img/links3.png' alt='link3' >
-						<img src='img/links4.png' alt='link4' >
+					<div>
+						<span class='yellowColor' >Follow us.</span>
+						<div>
+							<a href='http://www.facebook.com' target='_blank'>
+								<img src='img/links3.png' alt='link1' >
+							</a>	
+							<a href='http://www.twitter.com' target='_blank'>
+								<img src='img/links1.png' alt='link2' >
+							</a>	
+							<a href='http://www.facebook.com' target='_blank'>
+								<img src='img/links2.png' alt='link3' >
+							</a>
+							<a href='http://www.google.com' target='_blank'>	
+								<img src='img/links4.png' alt='link4' >
+							</a>	
+						</div>
 					</div>
-					<img src='img/lines.png' alt='lines' >
 				</address>
+
 			</div>
 		</div>
 	</section>
+	<script>		
+		player = document.getElementById('videoElement');
+		playButton = document.getElementById('playButton');
+		videoContainer = document.getElementById('videoContainer');
+		playButton.onclick = function() { 
+			videoContainer.style.zIndex = 10;
+			player.play();
+		};
+		playCaption = document.getElementById('playCaption');
+		playCaption.onclick = function() { 
+			videoContainer.style.zIndex = 10;
+			player.play();
+		};
+		player.onended = function() {
+			videoContainer.style.zIndex = 0;
+		}
+	</script>
 </body>
 </html>
