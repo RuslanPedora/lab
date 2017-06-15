@@ -81,28 +81,28 @@
 	margin-bottom: 70px;
 }
 /*Header section---------------------------------------------------------------------------------------------------------*/
-#mainHeader {
-	background-repeat: no-repeat;
-	background-image: url( 'img/background image.jpg' );
-	background-position: 0 75px;	
-	overflow: auto;
-}
 #logo {
 	float: left;
 	margin-left: 28px;
 	margin-top: 23px;
 }
-#mainHeader nav {
+#topDiv nav img {
+	max-width: 48px;
+	margin-top: 5px;
+	display: none;
 }
-#mainHeader nav ul {
+#topDiv {
+	overflow: show;
+}
+#topDiv nav ul {
 	list-style: none;
 	float: right;
 	margin-right: 23px;
 }
-#mainHeader nav ul li {
+#topDiv nav ul li {
 	float: left;
 }
-#mainHeader nav ul li a {
+#topDiv nav ul li a {
 	font-size: 14px;
 	font-family: "Poppins";
 	font-weight: bold;
@@ -113,10 +113,20 @@
 	transition: background-color .5s, color .4s;
 	display: inline-block;
 }
-#mainHeader nav ul li a:hover {
+#topDiv nav ul li a:hover {
 	background-color: rgb( 200, 200, 200 );
 	color: white;
 }	
+#menuWrapper {
+	display: inline-block;
+	float: right;
+}
+#mainHeader {
+	background-repeat: no-repeat;
+	background-image: url( 'img/background image.jpg' );
+	background-position: center top;	
+	overflow: auto;
+}
 .header-text {
  	font-size: 60px;
  	font-family: "LibreBaskerville";
@@ -156,9 +166,6 @@
 #headerFlex img {
 	margin-bottom: 22px;
 }
-
-
-
 /*About us section ---------------------------------------------------------------------------------------------------------*/
 #aboutUs>div>img {
 	margin: 12.45% 0% 12.5% 2.4%;
@@ -303,7 +310,7 @@
 	max-width: 100%;
 	max-height: 100%;
 	margin: auto;
-	transform: scaleX(2.2);
+	transform: scaleX(2.13);
 }
 #playButton {
 	border-radius: 50%;
@@ -338,6 +345,10 @@
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
+	box-sizing: border-box;
+}
+#portfolioBox>div>div:first-child img {
+	max-width: 100%;
 }
 .cirlce-plus {
 	font-size: 65px;
@@ -352,6 +363,8 @@
 	line-height: 89%;
 	opacity: 0;
 	transition: opacity .5s;
+	text-shadow: 1px 1px rgb( 150, 150, 150 );
+	box-shadow: 0 0 1px 1px rgb( 150, 150, 150 );
 }
 .portfolio-pop-up {
 	transition: top .5s;
@@ -360,7 +373,7 @@
 	background-color: white;
 	font-family: "Poppins";
 	font-size: 20px;
-	width: 98.2%;
+	width: 98.7%;
 }
 .portfolio-pop-up img {
 	width: 100%;
@@ -596,7 +609,7 @@
 	box-shadow:  2px -2px 2px 2px rgb( 220, 220, 220 );
 }
 .work-step:nth-of-type(2n) .work-step-info {
-	left: 59%;
+	left: 47%;
 }	
 .inner-text {
 	font-size: 15px;
@@ -744,8 +757,7 @@
 	left: 0;
 	z-index: -1;
 	opacity: .5;
-	max-width: 100%
-	max-height: 100%;
+	transform: scale( .982);
 }	
 
 #testi .section-title {
@@ -762,7 +774,7 @@
 #testiInnerblock {
 }
 .testimonials-text {
-	margin-top: 4%;
+	margin-top: 3.5%;
 	background-image: url( 'img/”.png' );
 	display: inline-block;
 	vertical-align: top;
@@ -896,12 +908,16 @@
 	flex-direction: column;
 	height: 675px;
 	margin-bottom: 5%;
+	align-content: center;
 }
 #blogFlex>div {
 	width: 46.3%;
 	box-sizing: border-box;
-	background-color:  white;
+	background-color:  white;	
 }
+#blogFlex>div:nth-child(1), #blogFlex>div:nth-child(2) {
+	margin-right: 3%;
+}	
 #blogFlex>div:nth-child(2)>div:first-child {
 	font-size: 20px;
 }
