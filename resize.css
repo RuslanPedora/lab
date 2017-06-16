@@ -47,13 +47,16 @@
 #videoContainer video {
 	transform: scaleX(1);
 }
+#testi .section-inner-div {
+	padding-bottom: 40px;
+}
 #testiInnerblock {
 	width: 100%;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 15px;
 }
 .testimonials-text {
-	width: calc(100% - 405px);
+	width: calc(100% - 415px);
 	padding: 15px;
 	box-sizing:  border-box;
 	margin-top: 0;
@@ -63,7 +66,7 @@
 	line-height: 85%;
 }
 #dotBar {
-	margin-right: 2%;
+	margin-right: 30px;
 }
 #contact address>div:last-child img {
 	padding: 2px;
@@ -75,6 +78,7 @@
 }
 #blogFlex>div {
 	width: 555px;
+	margin-bottom: 15px;
 }
 #blogFlex>div:nth-child(1), #blogFlex>div:nth-child(2) {
 	margin-right: 0;
@@ -84,6 +88,38 @@
 }
 /*-----------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 960px) {
+
+.about-us-right {	
+	background-image: none;
+}
+#services {
+	background-image: none;
+}
+#portfolio {
+	background-image: none;
+}
+#team {
+	background-image: none;
+}	
+#workSteps {
+	background-image: none;
+}
+#pricing {
+	background-image: none;
+}
+#testi {
+	background-image: url( 'img/testi_backgorund.jpg' );
+}
+#selectUs {
+	background-image: none;
+}
+#blog {
+	background-image: none;
+}
+#contact {
+	background-image: url( 'img/forest.png' );
+}
+
 .section-title {
 	padding-top: 60px;
 	font-size: 50px;
@@ -128,10 +164,10 @@
 	padding: 20px 20px;
 }
 .about-us-right div:nth-child( 2 ) {
-	padding: 10px 20px;
+	padding: 18px 30px 53px;
 }
 .about-us-right div:first-child {
-	padding-left: 10px;
+	padding-left: 20px;
 	font-size: 35px;
 }
 #serviceFlex>div {
@@ -160,12 +196,11 @@
 	top: 41px;
 	left: 37%;
 }
-#team {
+#team, #teamItem {
 	display: none;
 }
-
 #statsFlex {
-	margin-top: 15.1%;
+	margin-top: 17.1%;
 	margin-bottom: 1%;
 }
 #statsFlex>div .circle-dot {
@@ -219,8 +254,16 @@
 	padding-top: 30px;
 	font-size: 38px;
 }
+.section-title2 {
+	margin-bottom: 20px;
+}
 .header-text {
  	font-size: 38px;
+}
+.about-us-right div:first-child {
+	padding-left: 30px;
+	font-size: 35px;
+	padding-top: 28px;
 }
 #headerFlex img {
 	margin-bottom: 8px;
@@ -243,24 +286,43 @@
 	position: absolute;
 	top: 41px;
 	right: 0;
-	background-color: rgba( 200, 200, 200, .7 );
+	background-color: rgba( 255, 255, 255, .9 );
 	margin-right: 0;
 	padding-left: 0;
 	display: none;
+	width: 100%;
+	z-index: 10;
 }
 #menuWrapper:hover ul {
 	display: initial;
 }
 #topDiv nav ul li {
 	float: none;		
+	width: 100%;
 }
 #topDiv nav ul li a {
 	padding: 5px 3px 5px 3px;
-	font-size: 13px;
+	font-size: 15px;
 	width: 100%;
+}
+#topDiv nav ul li a:hover {
+	background-color: rgb( 234, 93, 84 );
+	color: white;
 }	
+#aboutUs .section-inner-div {
+	padding: 15px;
+}
+#aboutUs>div>img {
+	display: none;
+}
 .about-us-right {
 	letter-spacing: 0;
+	position: initial;
+	width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	box-shadow: 0 0 5px 5px rgb( 240, 240, 240 );
 }
 .about-us-right div:nth-child( 2 ) {
 	line-height: 135%;
@@ -274,7 +336,7 @@
 }
 #serviceFlex>div {
 	width: 40%;
-	margin: 0 0 10px 0;
+	margin: 0 0 15px 0;
 }
 
 #serviceFlex>div:nth-child(1) div:before {
@@ -324,30 +386,33 @@
 }
 #statsFlex>div:nth-child(1)>div:first-child:before {
 	transform: scale(.75);
-	top: -209%;
-	left: 32%;
 }	
 #statsFlex>div:nth-child(2) div:before {
 	transform: scale(.75);
-	top: -218%;
-	left: 36%;
 }	
 #statsFlex>div:nth-child(3) div:before {
 	transform: scale(.75);
-	top: -205%;
-	left: 32%;
 }	
 #statsFlex>div:nth-child(4) div:before {
 	transform: scale(.75);
-	top: -212%;
-	left: 33%;
 }	
 .work-step-info {
-	width: 76%;
+	position:  initial;
+	margin: 0 auto 15px;
+	width: calc( 80%);
 }
 .work-step:nth-of-type(2n) .work-step-info {
-	left: 18%;
+	box-shadow: 0 0 4px 4px rgb(220,220,200);
 }	
+.work-step:nth-child( 3 ) .work-step-info {
+	box-shadow: 0 0 4px 4px rgb( 220, 220, 220 );
+}	
+.work-step:nth-child( 5 ) .work-step-info {
+	box-shadow: 0 0 4px 4px rgb( 220, 220, 220 );
+}	
+
+
+
 .inner-text {
 	font-size: 13px;
 	margin-left: 5.3%;
@@ -361,6 +426,9 @@
 .work-step .work-step-info img {
 	margin: 0;
 	transform: scale(.5);
+}
+.work-step>img {
+	display: none;
 }
 
 .price-block-text>div{
@@ -401,8 +469,8 @@
 	margin-top: -6px;
 	padding-bottom: 21px;
 }	
-#testi {
-	/*display: none;*/
+#testi, #testiItem {
+	display: none;
 }
 #selectFlex {
 	margin: 0;
@@ -431,16 +499,19 @@
 }
 #blogFlex {
 	width: 100%;
-	padding: 10px;
+	padding: 15px;
+	margin: 0;
+	box-sizing: border-box;
 }
 #blogFlex>div {
 	width: 100%;
-	margin-bottom:  15px;
+	margin: 0 0 15px;
+	box-sizing: border-box;
 }
 
 #subscribeHeader {
 	font-size: 25px;
-	padding: 0 10px;
+	padding: 20px 10px 0;
 	margin: 0;
 }
 
@@ -489,9 +560,21 @@
 /*-----------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 575px) {
 
-.price-block-text>span {
+.price-block {
+	width: 90%;
+	margin-bottom: 15px;
+	max-width: 200px;
+}
+.price-block-text {
 	display: none;
 }
+#selectFlex {
+	margin: 0;
+}
+#selectFlex>div {
+	width: 90%;
+}
+
 
 }
 
@@ -520,11 +603,11 @@
 	font-size: 15px;
 	width: 100%;
 }
-#aboutUs {
-	/*display: none;*/
+#aboutUs, #aboutUsItem {
+	display: none;
 }
 .videoBox {
-	/*display: none;*/
+	display: none;
 }
 
 #serviceFlex>div {
@@ -536,19 +619,35 @@
 
 #serviceFlex>div:nth-child(1) div:before {
 	content: url( 'img/focus-img1.png' );
+	transform: scale(.8);
+	top: 13px;
 }	
 #serviceFlex>div:nth-child(2) div:before {
 	content: url( 'img/focus-img2.png' );
+	transform: scale(.8);
+	top: 13px;
 }	
 #serviceFlex>div:nth-child(3) div:before {
 	content: url( 'img/focus-img3.png' );
+	transform: scale(.8);
+	top: 13px;
 }	
 #serviceFlex>div:nth-child(4) div:before {
 	content: url( 'img/focus-img4.png' );
+	transform: scale(.8);
+	top: 13px;
 }
 #portfolioBox>div {
 	width: calc( 100% - 20px );
 }	
+
+#portfolioBox>div {
+	box-shadow: 0 0 2px 2px rgb( 240, 240, 240 );
+}
+.portfolio-pop-up {
+	top: calc( 88% - 42px);
+}
+
 #statsFlex {
 	flex-wrap: wrap;
 }
@@ -558,20 +657,6 @@
 }	
 #workSteps {
 	/*display: none;*/
-}
-.price-block {
-	width: 90%;
-	margin-bottom: 10px;
-}
-.price-block-text {
-	display: none;
-}
-
-#selectFlex {
-	margin: 0;
-}
-#selectFlex>div {
-	width: 90%;
 }
 #subscribe form input[type=email] {
 	border-radius: 0;
@@ -604,7 +689,7 @@
 .right-side-field {
 	clear: both;
 }
-#blog {
+#blog, #blogItem {
 	display: none;
 }
 

@@ -101,15 +101,16 @@
 	font-family: "Poppins";
 	font-weight: bold;
 	text-decoration: none;
-	padding: 24px 10px 28px 10px;
+	padding: 24px 10px 25px 10px;
 	color: rgb( 40, 40, 40 );
 	cursor: pointer;
-	transition: background-color .5s, color .4s;
+	transition: background-color .5s, color .4s, border-color .5s;
 	display: inline-block;
+	border-bottom: 3px solid transparent;
 }
 #topDiv nav ul li a:hover {
-	background-color: rgb( 200, 200, 200 );
-	color: white;
+	color: rgb( 234, 93, 84 );
+	border-bottom: 3px solid rgb( 234, 93, 84 );
 }	
 #menuWrapper {
 	display: inline-block;
@@ -357,7 +358,7 @@
 	height: 56px;
 	line-height: 89%;
 	opacity: 0;
-	transition: opacity .5s;
+	transition: opacity 1s;
 }
 .portfolio-pop-up {
 	transition: top .5s;
@@ -381,7 +382,7 @@
 	box-shadow: 0 0 2px 2px rgb( 240, 240, 240 );
 }
 #portfolioBox>div:hover .portfolio-pop-up {
-	top: calc( 88% - 48px);
+	top: calc( 88% - 42px);
 }
 #portfolioBox>div:hover .cirlce-plus {
 	opacity: 1;
@@ -575,25 +576,25 @@
 	content: url( 'img/stats1.png' );
 	position: absolute;
 	top: -209%;
-	left: 39%;
+	left: calc( 50% - 25px );
 }	
 #statsFlex>div:nth-child(2) div:before {
 	content: url( 'img/stats2.png' );
 	position: absolute;
 	top: -218%;
-	left: 40%;
+	left: calc( 50% - 25px );
 }	
 #statsFlex>div:nth-child(3) div:before {
 	content: url( 'img/stats3.png' );
 	position: absolute;
 	top: -205%;
-	left: 39%;
+	left: calc( 50% - 25px );
 }	
 #statsFlex>div:nth-child(4) div:before {
 	content: url( 'img/stats4.png' );
 	position: absolute;
 	top: -212%;
-	left: 38%;
+	left: calc( 50% - 25px );
 }	
 
 
@@ -639,8 +640,8 @@
 	margin-bottom: 12.9%;
 }
 .work-step:nth-child( 3 ) .work-step-info {
-	border-bottom: 3px solid rgb( 234, 93, 84 );	
-	box-shadow: -2px -2px 2px 2px rgb( 220, 220, 220 );
+	border-bottom: 3px solid rgb( 234, 93, 84 );
+	box-shadow: -2 -2 2px 2px rgb( 220, 220, 220 );
 }	
 .work-step:nth-child( 4 ) .work-step-info {
 	
@@ -753,12 +754,10 @@
 
 /*Testimonials section ---------------------------------------------------------------------------------------------------------*/	
 #testi {
-	background-image: url( 'img/testi_backgorund.jpg' ), url( 'img/07.png' );
-	background-repeat: no-repeat;
+	background-image: url( 'img/07.png' ),url( 'img/testi_backgorund.jpg' );
+	background-repeat:  no-repeat;
 	background-position: center top;
-	background-size: 100% 100%, auto;
-	background-color: rgba( 64, 64, 74, .6 );
-	overflow: auto;
+	background-size: auto, 100% 100%;
 }
 #testi .section-title {
 	color: white;
@@ -771,6 +770,8 @@
 	margin: 0 auto;
 	padding-bottom: 13.5%;
 	padding-left: 2.3%;
+	overflow: auto;
+	box-sizing: border-box;
 }
 #testiInnerblock img {
 	float: left;
@@ -780,7 +781,7 @@
 	background-image: url( 'img/”.png' );
 	display: inline-block;
 	vertical-align: top;
-	width: 59%;
+	width: 56.5%;
 	text-align: left;
 	font-size: 15px;
 	font-family: "Poppins";
@@ -815,13 +816,13 @@
 	vertical-align: top;
 	float: right;
 	margin-right: 4.9%;
-	margin-top: 2.2%;
+	margin-top: 1.5%;
 }
 #dotBar .circle-dot {
 	color: transparent;
 	border-color: white;
 	display: inline-block;
-	transition: color .5s, background-color .5s;
+	transition: color 1s, border-color .5s;
 	cursor: pointer;
 	margin: 2px;
 	border-width: 2px;
@@ -1028,18 +1029,17 @@
 
 /*Blog section ---------------------------------------------------------------------------------------------------------*/	
 #contact {
-	background-image: url( 'img/forest.png' ), url( 'img/10.png' );
-	background-repeat: no-repeat;
+	background-image: url( 'img/10.png' ), url( 'img/forest.png' );
+	background-repeat:  no-repeat;
 	background-position: center top;
-	background-size: 100% 100%, auto;
-	background-color: rgb( 240, 240, 240 );
-
+	background-size: auto, 100% 100%;
 }
 #contact form {
 	width: 70%;
 	margin: 0 auto;
 	text-align: left;
 	padding-top: .5%;
+	box-sizing: border-box;
 }
 #contact form textarea, #contact form input {
 	background-color: white;
@@ -1107,6 +1107,8 @@
 }
 #contact address>div:last-child img:hover {
 	cursor: pointer;
+	background-color: rgb( 251, 96, 68 );
+	border-radius: 3px;
 }
 #contact .section-inner-div {
 	padding-bottom: 7%;
