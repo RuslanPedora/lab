@@ -73,6 +73,7 @@
 	font-family: "Poppins";
 	color: rgb(97, 97, 97);
 	margin-bottom: 70px;
+	padding: 0 10px;
 }
 /*Header section---------------------------------------------------------------------------------------------------------*/
 #logo {
@@ -148,6 +149,7 @@
 	box-shadow: 0 1px 4px 4px white;
 }	
 #headerFlex {
+	display: -moz-box;
 	display: flex;
 	justify-content: center;
 	margin: auto;

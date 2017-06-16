@@ -130,7 +130,7 @@
 }
 #logo {
 	margin-left: 9px;
-	margin-top: 7px;
+	margin-top: 12px;
 	max-width: 87px;
 	margin-bottom: 5px;
 }
@@ -250,6 +250,9 @@
 }
 /*-----------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 740px) {
+#logo {
+	margin-top: 7px;
+}	
 .section-title {
 	padding-top: 30px;
 	font-size: 38px;
