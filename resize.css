@@ -18,7 +18,7 @@
 	width: 94%;
 }
 #headerFlex div {
-	margin: 6% 0 11.6% 0;
+	margin:  0;
 	font-size: 16px;
 }
 #portfolioBox>div {
@@ -35,7 +35,7 @@
 }
 #statsFlex>div{
 	width: 24%;
-	margin: 0 0.2%;
+	margin: 0 10px;
 }
 .work-step-info {
 	width: 50%;
@@ -151,7 +151,7 @@
 	width: 94%;
 }
 #headerFlex div {
-	margin: 11% 0 10.6% 0;
+	margin: 0;
 }
 #aboutUs>div>img {
 	margin: 0;
@@ -241,7 +241,7 @@
 }	
 #contact address>div {
 	width: calc( 100% / 3 );
-	padding: 4.9% 3% 3.9%;
+	padding: 15px 15px;
 }
 #contact address>div:first-child {
 	display: none;
@@ -278,7 +278,7 @@
 }
 #mainHeader button {
 	font-size: 14px;
-	margin: 31px auto 0;
+	margin: 31px auto 31px;
 	padding: 12px 35px 11px 35px;
 	border-radius: 25px;
 }
@@ -295,7 +295,15 @@
 	display: none;
 	width: 100%;
 	z-index: 10;
+    animation: submenuMove .5s;
+    animation-fill-mode: forwards;
+
 }
+@keyframes submenuMove {
+    from { opacity: 0; top: 61px;}
+    to { opacity: 1; top: 41px;}
+}
+
 #menuWrapper:hover ul {
 	display: initial;
 }
@@ -594,6 +602,10 @@
 .header-text {
  	font-size: 25px;
 }
+#mainHeader button {
+	font-size: 14px;
+	padding: 9px 30px;
+}
 #headerFlex {
 	flex-direction: column;
 	padding-bottom: 20px;
@@ -656,7 +668,7 @@
 }
 #statsFlex>div{
 	width: 49%;
-	margin: 15% 0.2% 0;
+	margin: 45px 1px 0;
 }	
 #workSteps {
 	/*display: none;*/
